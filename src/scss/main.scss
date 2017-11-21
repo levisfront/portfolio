@@ -1,0 +1,82 @@
+$black: #0d1013;
+$brancoOn: #fff;
+$brancooF: #cfcfd0;
+$bg: #545d5d;
+
+/* RESET //////////////////////////*/
+* {
+	margin:0;
+	padding: 0;
+	list-style: none;
+	font-family: arial;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color: $black;
+}
+
+/* MAIN //////////////////////////*/
+main {
+	display: flex;
+	flex-direction: row;
+}
+// RESPONSIVO
+@media (max-width: 768px){
+	main {
+		flex-direction: column;
+	}
+}
+
+/* PARAGRAPH //////////////////////////*/
+h1,
+h2,
+h3 {
+	color: $brancoOn;
+	font-size: 30px;
+	margin-bottom: 30px;
+
+	small {
+    font-size: 18px;
+    font-weight: 200;
+    display: flex;
+    width: 170px;
+    margin-top: 20px;
+	}
+}
+h2 {
+	font-size: 40px;
+	text-align: right;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+h3 {
+	font-size: 18px;
+	text-align: right;
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+p {
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 24px;
+  span {
+  	display: block;
+  }
+}
+
+/* ROLLING BAR ///////////////////////////////// */
+::-webkit-scrollbar-track {
+  background: $black;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: $black;
+}
+::-webkit-scrollbar-thumb {
+  background: $bg;
+}

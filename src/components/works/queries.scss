@@ -1,0 +1,18 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 900px){
+	.works-component {
+		.thumb {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 768px){
+	.works-component {
+		&.ativo {
+			height: 100% !important;
+		}
+	}
+}
