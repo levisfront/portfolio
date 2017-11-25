@@ -39,7 +39,7 @@ h3 {
     font-size: 18px;
     font-weight: 200;
     display: flex;
-    width: 170px;
+    width: 180px;
     margin-top: 20px;
 	}
 }
@@ -68,13 +68,16 @@ p {
   	display: block;
   }
 }
+a {
+	color: $brancoOn;
+}
 
 /* ROLLING BAR ///////////////////////////////// */
 ::-webkit-scrollbar-track {
   background: $black;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background: $black;
 }
 ::-webkit-scrollbar-thumb {

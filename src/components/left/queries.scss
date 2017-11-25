@@ -4,6 +4,8 @@
 // RESPONSIVO
 @media (max-width: 768px){
 	.left-component{
-		width: 100%;
+		&.ativo {
+			width: 100%;
+		}
 	}
 }

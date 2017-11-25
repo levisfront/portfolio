@@ -9827,6 +9827,10 @@ var rightCont = function () {
 
   var functions = {
 
+    ativo_page: function () {
+      $('.right-component').addClass('ativo');
+      $('.left-component').addClass('ativo');
+    },
     open_who_i_m: function () {
       $('[data-cont]').removeClass('ativo');
       $('.who-i-m-component').addClass('ativo');
@@ -9842,6 +9846,12 @@ var rightCont = function () {
     open_contact: function () {
       $('[data-cont]').removeClass('ativo');
       $('.contact-component').addClass('ativo');
+    },
+    scroll_element: function () {
+      const right = $('.right-component');
+      const right_top = $(right).position().top;
+      const html_body = $('html, body');
+      html_body.animate({ scrollTop: right_top }, 500);
     }
 
   };
@@ -9862,6 +9872,10 @@ var rightCont = function () {
         });
         $('.contact').on('click', function () {
           functions.open_contact();
+        });
+        $('.btn-nav').on('click', function () {
+          functions.ativo_page();
+          functions.scroll_element();
         });
       });
     },
@@ -9917,3 +9931,45 @@ var nav = function () {
 
 //init object
 nav.init();
+// Function Animation
+var animatioTit = function () {
+
+  var functions = {
+
+    animation_tit: function () {
+      $('.tit').css('margin-left', '40px');
+    },
+    animation_redes: function () {
+      $('.redes').css({
+        "height": "auto",
+        "overflow": "visibility",
+        "margin-bottom": "40px"
+      });
+    }
+
+  };
+
+  return {
+
+    plugins: function () {
+
+      $(document).ready(function () {
+
+        $(window).on("load", function () {
+
+          setTimeout(functions.animation_tit(), 2000);
+          setTimeout(functions.animation_redes(), 4000);
+        });
+      });
+    },
+
+    //init Animation
+    init: function () {
+      this.plugins();
+    }
+
+  };
+}();
+
+//init object
+animatioTit.init();
