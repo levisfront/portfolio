@@ -324,6 +324,10 @@ a {
   align-items: center;
 }
 
+.nav-component .nav ul li:nth-child(1) a {
+  margin-top: 40px;
+}
+
 .nav-component .nav ul a {
   color: #fff;
   text-decoration: none;
@@ -495,6 +499,10 @@ a {
 
   .left-component.ativo {
     width: 100%;
+  }
+
+  .nav-component .nav ul a {
+    font-size: 29px;
   }
 
   .right-component.ativo {

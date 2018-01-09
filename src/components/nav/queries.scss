@@ -2,8 +2,14 @@
 @import "../../scss/params.scss";
 
 // RESPONSIVO
-@media (max-width: 600px){
-	.contact-component {
-
+@media (max-width: 768px){
+	.nav-component {
+		.nav {
+			ul {
+				a {
+					font-size: 29px;
+				}
+			}
+		} 
 	}
 }

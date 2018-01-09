@@ -1,5 +1,5 @@
 // Function Animation
-var animatioTit = function () {
+var animationTit = function () {
 
   var functions = {
 
@@ -20,16 +20,10 @@ var animatioTit = function () {
 
     plugins: function() {
 
-      $(document).ready(function () {
-
-        $(window).on("load", function(){
-
-          setTimeout(functions.animation_tit(), 2000)
-          setTimeout(functions.animation_redes(), 4000)
-
-        })
-
-      });
+      $(window).on('load', function () {
+        functions.animation_tit()
+        functions.animation_redes()
+      })
 
     },
 
@@ -43,5 +37,5 @@ var animatioTit = function () {
 }();
 
 //init object
-animatioTit.init();
+animationTit.init();
 
