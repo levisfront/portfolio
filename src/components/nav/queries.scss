@@ -1,0 +1,15 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 768px){
+	.nav-component {
+		.nav {
+			ul {
+				a {
+					font-size: 29px;
+				}
+			}
+		} 
+	}
+}

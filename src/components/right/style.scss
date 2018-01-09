@@ -1,0 +1,26 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+/* RIGHT *////////////////////////////////////
+.right-component {
+	width: 0;
+	height: 100%;
+	transition: all .25s ease-in-out;
+
+	&.ativo {
+		width: 50%;
+	}
+
+	[data-cont]{
+		transform: scale(0, 0);
+		opacity: 0;
+		height: 0;
+		transition: all .25s ease-in-out;
+	}
+	.ativo {
+		transform: scale(1, 1);
+		opacity: 1;
+		height: 100vh;
+	}
+}
+

@@ -1,0 +1,11 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 768px){
+	.who-i-m-component {
+		&.ativo {
+			height: 100% !important;
+		}
+	}
+}

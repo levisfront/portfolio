@@ -1,0 +1,49 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 900px){
+	.works-component {
+		.thumb {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 768px){
+	.works-component {
+		&.ativo {
+			height: 100% !important;
+		}
+		.thumb {
+			&:hover {
+				border: 1px solid $brancoOn;
+
+				img {
+					transform: scale(1, 1);
+					opacity: 1;
+				}
+			}
+			img {
+				transition: none;
+				border-bottom: 1px solid $brancoOn;
+			}
+			a {
+				text-decoration: none;
+			}
+			.legend {
+				position: relative;
+				opacity: 1;
+				height: 148px;
+				background: none;
+				
+				small {
+			    width: auto;
+				}
+				h4 {
+					width: auto;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+//PARAMS
+@import "../../scss/params.scss";
+
+// RESPONSIVO
+@media (max-width: 768px){
+	.left-component{
+		&.ativo {
+			width: 100%;
+		}
+	}
+}
