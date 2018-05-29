@@ -1,0 +1,10 @@
+# Dependency directories
+node_modules
+
+
+# Dist 
+dist
+
+
+# Package-lock
+package-lock.json
