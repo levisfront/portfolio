@@ -85,6 +85,17 @@ gulp.task('image', () =>
     .pipe(bs.stream())
 )
 
+
+//
+//pdf
+///////////////////////////////////////////
+gulp.task('pdf', () =>
+   gulp.src( './src/pdf/*.pdf' )
+  .pipe(gulp.dest( './dist/pdf' ))
+  .pipe(bs.stream())
+)
+
+
 //
 //@watch
 ///////////////////////////////////////////
@@ -93,11 +104,12 @@ gulp.task('watch', () => {
   watch(paths.src.css.watch, () => gulp.start('css'))
   watch(paths.src.js, () => gulp.start('js'))
   watch(paths.src.img, () => gulp.start('image'))
+  watch( './src/pdf/*.pdf', () => gulp.start('pdf'))
 })
 
 //
 //@tasks default
 ///////////////////////////////////////////
 gulp.task('webserver', ['sync', 'watch'])
-gulp.task('build', ['html', 'css', 'js', 'image'])
+gulp.task('build', ['html', 'css', 'js', 'image', 'pdf'])
 gulp.task('default', runSequence('build', 'webserver'))
