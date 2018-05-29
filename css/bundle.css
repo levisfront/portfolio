@@ -108,7 +108,7 @@ a {
   outline: none;
   transition: .2s ease-in-out;
   box-sizing: border-box;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   color: #fff;
   font-weight: 200;
   text-align: right;
