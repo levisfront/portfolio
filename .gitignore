@@ -8,3 +8,7 @@ dist
 
 # Package-lock
 package-lock.json
+
+
+# YARN
+yarn.lock

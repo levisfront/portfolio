@@ -6,12 +6,12 @@
 - CSS 3
 - SASS
 - GULP
-- NPM
+- YARN
 
 ## AMBIENTE 
 
-- npm install 
-- npm install gulp
+- yarn install 
+- yarn install gulp
 - ASSISTIR PROJETO E BUILDA - gulp
 - ASSISTIR PROJETO RAPIDAMENTE SEM BUILD DE ARQUIVOS - gulp webserver
 
